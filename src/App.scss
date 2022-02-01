@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.header {
+  margin-bottom: 20px;
+
+  &__title {
+    color: #0f4c81;
+    font-size: 60px;
+    text-decoration: none;
+  }
+}
+

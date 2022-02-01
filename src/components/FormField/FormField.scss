@@ -1,0 +1,33 @@
+.form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 300px;
+  margin-bottom: 70px;
+
+  &__field {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 1px solid black;
+    outline: none;
+  }
+}
+
+.button-add {
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #0f4c81;
+  color: #fff;
+  border: 1px solid #0f4c81;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 100px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c6aad;
+  }
+}

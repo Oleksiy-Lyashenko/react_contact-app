@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.table {
+  padding: 20px;
+	border-collapse: collapse;
+
+  td {
+    padding: 10px;
+  }
+
+  &__head {
+    font-weight: bold;
+    padding: 10px;
+    background: #0f4c81;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__title th {
+    padding: 5px 40px;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 3px 7px;
+    margin-right: 3px;
+    text-decoration: none;
+    background-color: #0f4c81;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1c6aad;
+    }
+
+    &-delete {
+      background-color: #b22222;
+
+      &:hover {
+        background-color: #d74141;
+      }
+    }
+  }
+}
