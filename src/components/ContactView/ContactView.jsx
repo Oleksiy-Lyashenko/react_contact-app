@@ -31,7 +31,7 @@ const ContactPerson = ({ contacts, deleteContact }) => {
       <div className='contact-view__bottom'>
         {newContact ? (
           <>
-            <Link to='/' className='contact-view__button'>Back</Link>
+            <Link to='/react_contact-app/' className='contact-view__button'>Back</Link>
 
             <button
               className='contact-view__button contact-view__button-delete'
@@ -40,11 +40,11 @@ const ContactPerson = ({ contacts, deleteContact }) => {
               Delete
             </button>
 
-            <Link to={`/edit/${newContact.id}`} className='contact-view__button'>Edit</Link> 
+            <Link to={`/react_contact-app/edit/${newContact.id}`} className='contact-view__button'>Edit</Link> 
           </>
         ) : (
           <>
-            <Link to='/' className='contact-view__button'>Back</Link>
+            <Link to='/react_contact-app/' className='contact-view__button'>Back</Link>
           </>
         )}
       </div>

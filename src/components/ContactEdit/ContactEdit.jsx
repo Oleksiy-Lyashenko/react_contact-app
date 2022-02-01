@@ -9,8 +9,8 @@ const ContactEdit = ({contacts, setContacts}) => {
 
   const [firstName, setFirstName] = useState(newContact.firstname);
   const [lastName, setLastName] = useState(newContact.lastname);
-  const [city, setCity] = useState(newContact.city);
-  const [email, setEmail] = useState(newContact.email);
+  const [newCity, setCity] = useState(newContact.city);
+  const [newEmail, setEmail] = useState(newContact.email);
   const [phone, setPhone] = useState(newContact.tel);
 
   const handleSubmit = (event) => {
@@ -26,8 +26,9 @@ const ContactEdit = ({contacts, setContacts}) => {
           const oldContact = {...contact};
 
           contact.firstname = firstName;
-          contact.lastName = lastName;
-          contact.email = email;
+          contact.lastname = lastName;
+          contact.city = newCity;
+          contact.email = newEmail;
           contact.tel = phone;
           contact.prev = oldContact;
         }
@@ -91,7 +92,7 @@ const ContactEdit = ({contacts, setContacts}) => {
 
             <input
               type="text"
-              value={city}
+              value={newCity}
               onChange={event => {
                 setCity(event.target.value)
               }}
@@ -101,7 +102,7 @@ const ContactEdit = ({contacts, setContacts}) => {
 
             <input
               type="email"
-              value={email}
+              value={newEmail}
               onChange={event => {
                 setEmail(event.target.value)
               }}
@@ -123,7 +124,7 @@ const ContactEdit = ({contacts, setContacts}) => {
             <div>
               <button type='submit' className='button__edit'>Change</button>
 
-              <Link to='/'>
+              <Link to='/react_contact-app/'>
                 <button className='button__edit'>
                   Back
                 </button>
