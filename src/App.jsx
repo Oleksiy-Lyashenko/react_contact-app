@@ -31,13 +31,13 @@ function App() {
   return (
     <div className="App">
       <header className='header'>
-        <Link to='/' className='header__title'>
+        <Link to='/react_contact-app/' className='header__title'>
           Contact App
         </Link>
       </header>
       <Routes>
         <Route
-          path='/'
+          path='/react_contact-app/'
           element={<HomeList
             addContact={addContact}
             contacts={contacts}
@@ -46,7 +46,7 @@ function App() {
         />
 
         <Route
-          path='/contacts/:personalId'
+          path='/react_contact-app/contacts/:personalId'
           element={<ContactPerson 
             contacts={contacts}
             deleteContact={deleteContact}
@@ -55,7 +55,7 @@ function App() {
         />
 
         <Route
-          path='/edit/:personalId'
+          path='/react_contact-app/edit/:personalId'
           element={<ContactEdit
             contacts={contacts}
             setContacts={setContacts}

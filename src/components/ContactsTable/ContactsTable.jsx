@@ -29,7 +29,7 @@ const ContactsTable = ({contacts, deleteContact}) => {
               <td>{contact.tel}</td>
               <td>
                 <Link
-                  to={`/edit/${contact.id}`}
+                  to={`/react_contact-app/edit/${contact.id}`}
                   className='table__button'
                 >
                   Edit
@@ -43,7 +43,7 @@ const ContactsTable = ({contacts, deleteContact}) => {
                 </div>
 
                 <Link
-                  to={`/contacts/${contact.id}`}
+                  to={`/react_contact-app/contacts/${contact.id}`}
                   className='table__button'
                 >
                   View

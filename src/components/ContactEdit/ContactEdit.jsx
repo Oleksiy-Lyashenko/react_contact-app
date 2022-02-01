@@ -123,7 +123,7 @@ const ContactEdit = ({contacts, setContacts}) => {
             <div>
               <button type='submit' className='button__edit'>Change</button>
 
-              <Link to='/'>
+              <Link to='/react_contact-app/'>
                 <button className='button__edit'>
                   Back
                 </button>
